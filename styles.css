@@ -1,0 +1,53 @@
+/* Reset de estilos */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto; /* Centraliza a imagem dentro da div */
+}
+
+/* Estilo do banner */
+#banner {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* IMAGEM */
+#pagina-inicial {
+    text-align: center; /* Centraliza o conteúdo do bloco */
+}
+
+#imagem-inicial {
+    margin-top: 20px; /* Adiciona um espaço entre o menu e a imagem (ajuste conforme necessário) */
+}
+
+#imagem-inicial img {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem dentro da div */
+}

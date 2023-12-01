@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/qiskit@0.31.0/dist/browser.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        #pagina-inicial, #aplicacoes {
+            padding: 20px;
+        }
+
+        #banner {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #descricao {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #aplicacoes-conteudo {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #aplicacoes-conteudo h2 {
+            color: #333;
+        }
+
+        #exemplo-python {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #exemplo-python h3 {
+            color: #333;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        code {
+            display: block;
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Aplicações Práticas da Computação Quântica</title>
+</head>
+<body>
+
+    <!-- PÁGINA INICIAL -->
+    <section id="pagina-inicial">
+        <!-- Banner atrativo e informativo -->
+        <div id="banner">
+            <h1>Bem-vindo à Computação Quântica</h1>
+            <p>Descubra o futuro da computação.</p>
+        </div>
+        <!-- Breve descrição do conteúdo do site -->
+        <div id="descricao">
+            <h1>Explore os conceitos, desafios e aplicações emocionantes da computação quântica.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para página inicial.</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <h1>Calculadora Quântica Simples</h1>
+    <label for="input">Digite um valor quântico:</label>
+    <input type="text" id="input" placeholder="Digite um número quântico">
+
+    <button onclick="realizarCalculo()">Calcular</button>
+
+    <p id="resultado"><br></p>  
+    <p><br></p>
+    <p>Este é apenas um exemplo muito simples e não representa a verdadeira natureza da computação quântica. A computação quântica real envolve operações em qubits e é implementada em linguagens especializadas. Este exemplo é apenas uma simulação simplificada para ilustrar como você pode criar uma interface básica com HTML e JavaScript.</p>
+
+    <script>
+        function realizarCalculo() {
+            // Simulação de cálculo quântico
+            const inputElement = document.getElementById('input');
+            const valorQuantico = parseFloat(inputElement.value);
+
+            if (!isNaN(valorQuantico)) {
+                const resultado = valorQuantico ** 2; // Operação quântica simulada
+
+                const resultadoElement = document.getElementById('resultado');
+                resultadoElement.textContent = `O resultado quântico é: ${resultado}`;
+            } else {
+                alert('Digite um número válido!');
+            }
+        }
+    </script>
+
+    <!-- SEÇÃO 4: APLICAÇÕES PRÁTICAS -->
+    <section id="aplicacoes">
+        <div id="aplicacoes-conteudo">
+            <h2>Aplicações Práticas da Computação Quântica</h2>
+            <p>A computação quântica, fundamentada nos princípios da mecânica quântica, promete revolucionar diversos setores, desafiando as capacidades dos computadores clássicos. Abaixo, exploramos algumas dessas aplicações em detalhes:</p>
+            <ol>
+                <li><h2>Otimização de Rotas Logísticas:</h2>
+                    <p>A computação quântica pode otimizar rotas complexas para logística, considerando inúmeras variáveis simultaneamente. Empresas de transporte podem se beneficiar ao reduzir custos e melhorar a eficiência nas entregas.</p>
+                </li>
+                <li><h2>Simulações Moleculares Avançadas:</h2>
+                    <p>A capacidade dos qubits de lidar com superposição permite simulações mais precisas de moléculas complexas, sendo crucial para a descoberta de novos medicamentos e materiais.</p>
+                </li>
+                <!-- Adicione os itens restantes da lista com o mesmo formato -->
+            </ol>
+            <p>Esses exemplos destacam o vasto potencial da computação quântica para transformar fundamentalmente setores inteiros, oferecendo soluções inovadoras e abrindo caminho para novas descobertas e avanços tecnológicos. No entanto, é importante notar que, embora as aplicações práticas sejam promissoras, a computação quântica ainda está em estágio inicial de desenvolvimento e enfrenta desafios significativos antes de atingir sua plena maturidade e implementação generalizada.</p>
+            <p><br></p>
+            <p><br></p>
+            <section id="explicacao-qiskit">
+                <h2>Explorando o Código com Qiskit</h2>
+                <p>O código abaixo utiliza o framework Qiskit, uma biblioteca de computação quântica em Python, para criar, simular e visualizar um circuito quântico simples. Vamos analisar o código passo a passo:</p>
+                
+        
+            </section>
+            <p><br></p>
+            <p><br></p>
+            <h2>ABAIXO UM MODELO DE CÓDIGO EM PYTHON SIMPLES, PARA SER UTILIZADO COMO TESTE PARA A COMPUTAÇÃO QUÂNTICA</h2>
+            <p><br></p>
+            <p><br></p>
+            <div id="exemplo-python">
+                <h3>Código Python para Simulação Quântica:</h3>
+                <pre>
+                    <code>
+                        from qiskit import Aer, QuantumCircuit, transpile, assemble
+                        from qiskit.visualization import plot_histogram
+
+                        # Criar um circuito quântico com 2 qubits
+                        quantum_circuit = QuantumCircuit(2, 2)
+
+                        # Aplicar um gate Hadamard no primeiro qubit
+                        quantum_circuit.h(0)
+
+                        # Aplicar um gate CNOT entre os dois qubits
+                        quantum_circuit.cx(0, 1)
+
+                        # Medir os qubits
+                        quantum_circuit.measure([0, 1], [0, 1])
+
+                        # Visualizar o circuito
+                        print("Circuito Quântico:")
+                        print(quantum_circuit)
+
+                        # Simular o circuito em um simulador quântico
+                        simulator = Aer.get_backend('qasm_simulator')
+                        compiled_circuit = transpile(quantum_circuit, simulator)
+                        result = simulator.run(compiled_circuit, shots=1024).result()
+
+                        # Visualizar o resultado
+                        counts = result.get_counts()
+                        print("\nResultado da Simulação:")
+                        print(counts)
+
+                        # Plotar o histograma do resultado
+                        plot_histogram(counts)
+                    </code>
+                </pre>
+                <p><br></p>
+                <p>RESULT:</p>
+                <p><br></p>
+                <div id="imagem-inicial">
+                    <img src="result.jpg" alt="Computação Quântica">
+                </div>
+                <p><br></p>
+                <p>Copie e cole o código Python acima para experimentar uma simulação quântica simples.</p>
+                <p>NÃO ESQUEÇA DE INSTALAR AS BIBLIOTECAS NECESSÁRIAS.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2023 Computação Quântica. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

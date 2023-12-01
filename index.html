@@ -1,103 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Computação quântica</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        #pagina-inicial {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #banner {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #descricao {
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        #imagem-inicial img {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #696969;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #faq-comments {
+            margin-top: 20px;
+        }
+
+        #faq-comments h3 {
+            color: #fff;
+        }
+
+        #faq-comments ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        #faq-comments li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Computação Quântica - Página Inicial</title>
 </head>
 <body>
-    
-    <header>
-        <h1>Quantum Computing Hardware</h1>
-        <h2>
-            Um Vislumbre do Futuro da Tecnologia
-        </h2>
-        <h6>
-            Um guia para entender a computação quântica e como ela funciona.
-        </h6>
-    </header>
-    <main>
-        <img src="./image/img1.avif" alt="" class="img-default">
 
-        <p>
-        <h5>O que é?</h5>
-            A computação quântica é um campo multidisciplinar que abrange aspectos da ciência da computação, física e matemática, 
-            utilizando mecânica quântica para resolver problemas complexos mais rapidamente do que em computadores clássicos. O campo da computação quântica inclui 
-            pesquisa de hardware e desenvolvimento de aplicações. Computadores quânticos são capazes de resolver certos tipos de problemas mais rapidamente do que os 
-            computadores clássicos, aproveitando efeitos da mecânica quântica, como superposição e interferência quântica. Algumas aplicações onde os computadores quânticos 
-            podem oferecer vantagens incluem aprendizado de máquina (ML), otimização e simulação de sistemas físicos. Possíveis casos de uso futuros poderiam ser otimização 
-            de portfólio em finanças ou a simulação de sistemas químicos, resolvendo problemas que são atualmente impossíveis até mesmo para os supercomputadores mais poderosos 
-            do mercado.
-        </p>
-        <br></br>
-        <div class="merge-texto-imagem">
-            <img src="./image/img2.jpg" alt="">
-            <p>
-                <strong>A magia dos Qubits</strong><br></br>
-                Imagine os bits clássicos como moedas que podem ser cara (0) ou coroa (1), enquanto os qubits são semelhantes a moedas giratórias que existem numa sobreposição de ambos os estados—cara, coroa e tudo o que está entre eles—até serem medidos. Essa característica dos qubits concede aos computadores quânticos o potencial para realizar cálculos a uma taxa exponencialmente superior aos computadores clássicos para certos problemas.            
-                Bits quânticos, ou qubits, são representados por partículas quânticas. A manipulação de qubits por dispositivos de controle está no cerne do poder de processamento de um computador quântico. Qubits em computadores quânticos são análogos aos bits em computadores clássicos. No núcleo, o processador de uma máquina clássica faz todo o seu trabalho manipulando bits. Da mesma forma, o processador quântico faz todo o seu trabalho processando qubits.
-                <br></br><strong>Como os qubits são diferentes dos bits clássicos?</strong><br></br>
-                Na computação clássica, um bit é um sinal eletrônico que está ligado ou desligado. O valor do bit clássico pode ser um (ligado) ou zero (desligado). No entanto, como o qubit é baseado nas leis da mecânica quântica, ele pode ser colocado em uma superposição de estados.
-                <br></br><strong>Do que são feitos os qubits?</strong> A resposta depende da arquitetura dos sistemas quânticos, já que alguns exigem temperaturas extremamente baixas para funcionar adequadamente. Qubits podem ser feitos de íons aprisionados, fótons, átomos artificiais ou reais, ou quasipartículas, enquanto bits binários são frequentemente chips baseados em silício.
-            </p>
+    <!-- PÁGINA INICIAL -->
+    <section id="pagina-inicial">
+        <!-- Banner atrativo e informativo -->
+        <div id="banner">
+            <h1>Bem-vindo à Computação Quântica</h1>
+            <p>Descubra o futuro da computação.</p>
         </div>
-
-        <section>
-            <h5>Quais são os princípios da computação quântica?</h5>
-            <p>
-                Um computador quântico funciona usando princípios quânticos. Princípios quânticos requerem um novo dicionário de termos para serem completamente compreendidos, termos que incluem superposição, emaranhamento e decoerência. Vamos entender esses princípios abaixo.
-                <br></br>
-                <strong>Superposição</strong><br></br>
-                A superposição afirma que, assim como ondas na física clássica, você pode adicionar dois ou mais estados quânticos e o resultado será outro estado quântico válido. Da mesma forma, você também pode representar cada estado quântico como a soma de dois ou mais outros estados distintos. Essa superposição de qubits dá aos computadores quânticos seu paralelismo inerente, permitindo que eles processem milhões de operações simultaneamente.
-                <br></br>
-                <strong>Emaranhamento</strong><br></br>
-                O emaranhamento quântico ocorre quando dois sistemas estão tão interligados que o conhecimento sobre um dá conhecimento imediato sobre o outro, não importa quão distantes estejam. Processadores quânticos podem deduzir informações sobre uma partícula ao medir outra. Por exemplo, podem determinar que se um qubit gira para cima, o outro sempre girará para baixo, e vice-versa. O emaranhamento quântico permite que os computadores quânticos resolvam problemas complexos mais rapidamente.
-                Quando um estado quântico é medido, a função de onda colapsa e você mede o estado como sendo um zero ou um. Nesse estado conhecido ou determinístico, o qubit age como um bit clássico. O emaranhamento é a capacidade dos qubits de correlacionar seu estado com outros qubits.
-                <br></br>
-                <strong>Decoerência</strong><br></br>
-                Decoerência é a perda do estado quântico em um qubit. Fatores ambientais, como radiação, podem fazer com que o estado quântico dos qubits colapse. Um grande desafio na construção de um computador quântico é projetar as várias características que tentam retardar a decoerência do estado, como construir estruturas especializadas que protejam os qubits de campos externos.
-            </p>
-            <img src="./image/img3.jpeg" alt="" class="img-default">
-            <p>
-    
-                <strong>Quais são os componentes de um computador quântico?</strong><br></br>
-                Computadores quânticos têm hardware e software, semelhantes a um computador clássico.
-                <br></br>
-                <strong>Hardware quântico</strong><br></br> O hardware quântico possui três componentes principais.
-                <br></br>
-                <strong>Plano de dados quânticos</strong><br></br> O plano de dados quânticos é o núcleo do computador quântico e inclui os qubits físicos e as estruturas necessárias para mantê-los no lugar.
-                <br></br>
-                <strong>Plano de controle e medição</strong><br></br> O plano de controle e medição converte sinais digitais em sinais de controle analógicos ou de onda. Esses sinais analógicos realizam as operações nos qubits no plano de dados quânticos.
-                <br></br>
-                <strong>Plano do processador de controle e processador hospedeiro</strong><br></br> Plano do processador de controle e processador hospedeiro: O plano do processador de controle implementa o algoritmo quântico ou sequência de operações. O processador hospedeiro interage com o software quântico e fornece um sinal digital ou uma sequência de bits clássicos para o plano de controle e medição.
-   
-            </p>
-            <img src="./image/processor.jpg" alt="" class="img-default">
-            <p>
-
-            </p>
-        </section>
-
-        <section class="referencias">
-            <h5>References</h5>
+        <!-- Breve descrição do conteúdo do site -->
+        <div id="descricao">
+            <h1>Explore os conceitos, desafios e aplicações emocionantes da computação quântica.</h1>
+        </div>
+        <!-- Navegação fácil para outras seções -->
+        <nav>
             <ul>
-                <li>
-                    <a href="https://builtin.com/hardware/quantum-computing" target="_blank">built in</a>.<br></br>
-                    <a href="https://ts2.space/en/quantum-computing-hardware-a-glimpse-into-the-future-of-technology/#gsc.tab=0" target="_blank">ts2 space</a>.
-                </li>
+                <li><a href="sobre.html">Sobre a Computação Quântica</a></li>
+                <li><a href="como-ingressar.html">Como Ingressar</a></li>
+                <li><a href="aplicacoes.html">Aplicações Práticas</a></li>
+                <li><a href="desafios-oportunidades.html">Desafios e Oportunidades</a></li>
+                <li><a href="matematica.html">Matemática da Computação Quântica</a></li>
             </ul>
-        </section>
+        </nav>
+    </section>
+    <!-- Imagem abaixo do menu -->
+    <div id="imagem-inicial">
+        <img src="image.jpeg" alt="Computação Quântica">
+    </div>
 
-    </main>
+    <!-- RODAPÉ -->
     <footer>
-        <ul>
-            <li>Matheus Daniel Lima - 2202015</li>
-            <li>Laiza Russi - 2201862</li>
-            <li>Samuel da Silva Santos - 2200786</li>
-            <li>Vinícius Rhuan Oliveira Reis - 2200742</li>
-
-        </ul>
+        <p>&copy; 2023 Computação Quântica. Todos os direitos reservados.</p>
+        <div id="faq-comments">
+            <h3>Perguntas Frequentes</h3>
+            <ul>
+                <li><strong></strong><h1><p><a href="https://www.youtube.com/watch?v=movvRtF_sSQ" target="_blank">Como funciona um COMPUTADOR QUÂNTICO? </a></p></h1></strong></li>
+                <li><strong></strong><h1><p><a href="https://www.youtube.com/watch?v=OjHiC7BnZTA" target="_blank">Quais são os desafios atuais na pesquisa quântica? </a></p></h1></strong></li>
+                <!-- Adicione mais perguntas conforme necessário -->
+            </ul>
+        </div>
     </footer>
+
 </body>
 </html>
